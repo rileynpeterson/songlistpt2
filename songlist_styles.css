@@ -1,0 +1,70 @@
+html, body{
+    padding: 20px;
+    color:#c00ef7;
+    background-color: #e4c3e7;
+    text-align:center; 
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-image: url(photo-1501612780327-45045538702b.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; */
+}
+
+/* body {
+    padding: 20px;
+    color:#c81dd8;
+    background-color: #e4c3e7;
+    text-align:center; 
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+#songs,#new_songs {
+    padding: 5px;
+    font-size: 16px;
+}
+
+
+
+h1 {
+    font-size: xx-large;
+}
+
+/* Song {
+    display: block;
+    color: #eae9ec;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+Song:hover {
+    color: #00b5fd;
+    font-weight: bolder;
+}
+
+
+Artist {
+    display: block;
+}
+
+Title {
+    display: block;
+    font-style: italic;
+}
+
+Title:hover {
+    color: #ff0080;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+Genre {
+    display: block;
+}
+
+ReleaseYear {
+    display: block;
+} */

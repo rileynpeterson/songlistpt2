@@ -1,0 +1,71 @@
+ [ 
+    {
+        "artist" :"Juice WRLD",
+        "title" :"Armed and Dangerous",
+        "genre" :["Hip Hop"],
+        "year" :"2018"
+    },
+    {
+        "artist" :"Juice WRLD",
+        "title" :"Bandit",
+        "genre" :["Hip Hop"],
+        "year" :"2019"
+
+    },
+    {
+        "artist" :"Juice WRLD",
+        "title" :"Lucid Dreams",
+        "genre" :["Hip Hop"],
+        "year" :"2018"
+
+    },
+    {
+        "artist" :"Luke Combs",
+        "title" :"Beautiful Crazy",
+        "genre" :["Country"],
+        "year" :"2018"
+
+    },
+    {
+        "artist" :"Luke Combs",
+        "title" :"Beer Never Broke My Heart",
+        "genre" :["Country"],
+        "year" :"2019"
+
+    },
+    {
+        "artist" :"Bruce Springsteen",
+        "title" :"Born in the USA",
+        "genre" :["Rock"],
+        "year" :"1984"
+
+    },
+    {
+        "artist" : "Bruce Springsteen",
+        "title" : "Rosalita",
+        "genre" : ["Rock"],
+        "year" : "1973"
+
+    },
+    {
+        "artist" : "Bruce Springsteen",
+        "title" : "Born To Run",
+        "genre" : ["Rock"],
+        "year" : "1975"
+
+    },
+    {
+        "artist" : "Bridgit Mendler",
+        "title" : "Ready Or Not",
+        "genre" : ["Pop"],
+        "year" : "2012"
+
+    },
+    {
+        "artist" : "Bridgit Mendler",
+        "title" : "Hurricane",
+        "genre" : ["Pop"],
+        "year" : "2012"
+
+    }
+]
