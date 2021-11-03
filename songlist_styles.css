@@ -1,32 +1,27 @@
 html, body{
     padding: 20px;
     color:#c00ef7;
-    background-color: #e4c3e7;
+    background-color: #000;
     text-align:center; 
     text-decoration: none;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* background-image: url(photo-1501612780327-45045538702b.jpeg);
+    background-image: url(photo-1501612780327-45045538702b.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative; */
-}
-
-/* body {
-    padding: 20px;
-    color:#c81dd8;
-    background-color: #e4c3e7;
-    text-align:center; 
-    text-decoration: none;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-} */
-
-#songs,#new_songs {
-    padding: 5px;
-    font-size: 16px;
+    position: relative; 
 }
 
 
+#raw_string, #all_songs {
+    font: bold;
+    padding: 10px;
+
+}
+
+#raw_string:hover{
+    color:#0edcf7;
+}
 
 h1 {
     font-size: xx-large;

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My JSON Song List</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>	
+    <script language="javascript" type="text/javascript" src="songlist.json"></script>
+	<link rel="stylesheet" type="text/css" href="songlist_styles.css">
+
+</head>
+<body onload="loadFile()">
+
+<h1>My JSON Song List</h1>
+<div id="form">
+    <form>
+        <select id="genre_dropdown" >
+            <option disabled = "disabled" selected = "selected" value="select">-- Select One --</option>
+            <option value="All">All</option>
+            <option value="Hip Hop">Hip Hop</option>
+            <option value="Rock">Rock</option>
+            <option value="Country">Country</option>
+            <option value="Pop">Pop</option>
+        </select>
+        <input type="button" value = "Filter Genres" id="filter" onclick="filterGenres()"/>
+    </form>
+</div>
+
+
+<div id = "raw_string"></div>
+<div id="all_songs"></div>
+
+</body>
+<script type="text/javascript">
+var songlist, song, string;
+$(document).ready(function() {
+   $('select').css('color','gray');
+   $('select').change(function() {
+      var current = $('select').val();
+      if (current != 'null') {
+          $('select').css('color','black');
+      } else {
+          $('select').css('color','gray');
+      }
+   }); 
+});
+
+//reading in JSON file...based off of example read_json_ajax.html
+function loadFile() {
+			/* Step 1: Make instance of request object...
+			...to make HTTP request after page is loaded*/
+			request = new XMLHttpRequest();
+ 
+			request.open("GET", "https://raw.githubusercontent.com/rileynpeterson/songlistpt2/main/songlist.json", true);
+
+			request.onreadystatechange = function() {
+			
+                result = request.responseText;
+                songlist = JSON.parse(result);
+                string = JSON.stringify(songlist);
+                document.getElementById("raw_string").innerHTML = string;
+                
+                strHTML = "";
+                
+                songlist.forEach(function(song) { 
+                    
+                    strHTML +=  "<br><br>Title: " + song.title + "<br>Artist: " + song.artist + "<br>Genre: " + song.genre + "<br>Year: " + song.year;
+                    
+                }) 
+            
+                document.getElementById("all_songs").innerHTML =strHTML;  
+		}
+	
+			request.send();
+			
+		}
+
+function filterGenres(){
+    var genre_selected = $("#genre_dropdown").val();
+        strHTML = "";
+        songlist.forEach(function(song){
+            if (song.genre == genre_selected || genre_selected == "All"){
+                strHTML += "<br><br>Title: " + song.title + "<br>Artist: " + song.artist + "<br>Genre: " + song.genre + "<br>Year: " + song.year;
+            }
+        })
+        document.getElementById("all_songs").innerHTML = strHTML;  
+  
+}
+
+</script>
+
+</html>
