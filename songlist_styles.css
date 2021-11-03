@@ -5,12 +5,26 @@ html, body{
     text-align:center; 
     text-decoration: none;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(photo-1501612780327-45045538702b.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative; 
+
 }
+
+#genre_dropdown {
+    color:#c00ef7;
+}
+
+#filter {
+    color:#0edcf7;
+    border-radius: 8px;
+    background-color: #c00ef7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#filter:hover {
+    color:#c00ef7;
+    border-radius: 8px;
+    background-color: #0edcf7;
+}
+
 
 
 #raw_string, #all_songs {
